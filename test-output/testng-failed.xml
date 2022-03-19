@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="Param2" value="Abc@12345"/>
+    <parameter name="Param1" value="xyz@abc.com"/>
+    <classes>
+      <class name="TestCases.Login_Test">
+        <methods>
+          <include name="Teardown"/>
+          <include name="ParameterizedTest"/>
+          <include name="LoginSuccessTest"/>
+          <include name="Setup"/>
+          <include name="ExternalDataTest"/>
+          <include name="LoginFailiureTest"/>
+          <include name="DataSetUP"/>
+          <include name="DataTearDown"/>
+        </methods>
+      </class> <!-- TestCases.Login_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
